@@ -99,6 +99,34 @@
         </div>
     </div>
 
+    
+<!-- WhatsApp Floating Button -->
+
+
+<a href="https://wa.me/233557705954?text=Hi%20There!"
+class="float"
+style="
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 70px;
+  right: 120px;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px #999;
+"
+>
+<img
+  src="https://trickuweb.com/whatsapp.png"
+  alt=""
+  height="60px"
+  width="60px"
+/>
+</a>
+
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
@@ -117,8 +145,25 @@
 
             window.open(url, '_blank').focus();
         }
+
+<!-- Javascript Code For Sending Form Data To WhatsApp -->
+
+    function gotowhatsapp() {
+    
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    var email = document.getElementById("email").value;
+    var service = document.getElementById("service").value;
+
+    var url = "https://wa.me/918789529215?text=" 
+    + "Name: " + name + "%0a"
+    + "Phone: " + phone + "%0a"
+    + "Email: " + email  + "%0a"
+    + "Service: " + service; 
+
+    window.open(url, '_blank').focus();
+}
     </script>
 </body>
 
 </html>
-
